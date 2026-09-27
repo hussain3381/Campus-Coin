@@ -2,24 +2,43 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $categories = [
+            ['name' => 'Allowance', 'type' => 'income'],
+            ['name' => 'Part-time Job', 'type' => 'income'],
+            ['name' => 'Scholarship', 'type' => 'income'],
+            ['name' => 'Gift', 'type' => 'income'],
+            ['name' => 'Other Income', 'type' => 'income'],
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+            ['name' => 'Food', 'type' => 'expense'],
+            ['name' => 'Transport', 'type' => 'expense'],
+            ['name' => 'Hostel/Rent', 'type' => 'expense'],
+            ['name' => 'Academics', 'type' => 'expense'],
+            ['name' => 'Subscriptions', 'type' => 'expense'],
+            ['name' => 'Entertainment', 'type' => 'expense'],
+            ['name' => 'Miscellaneous', 'type' => 'expense'],
+        ];
+
+        foreach ($categories as $category) {
+            DB::table('categories')->updateOrInsert(
+                [
+                    'user_id' => null,
+                    'name' => $category['name'],
+                    'type' => $category['type'],
+                ],
+                [
+                    'icon' => null,
+                    'is_system' => true,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+        }
     }
 }
