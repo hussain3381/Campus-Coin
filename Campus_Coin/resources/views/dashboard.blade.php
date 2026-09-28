@@ -85,4 +85,59 @@
         </section>
     </div>
 </div>
+<section class="panel mt-3">
+    <h2 class="h5 fw-bold mb-3">Budget vs Actual</h2>
+
+    @forelse ($budgets as $budget)
+        @php
+            $percent = (float) $budget->percent;
+            $width = min($percent, 100);
+
+            if ($percent >= 100) {
+                $status = 'Exceeded';
+                $barColor = 'bg-danger';
+            } elseif ($percent >= 75) {
+                $status = 'Near limit';
+                $barColor = 'bg-warning';
+            } else {
+                $status = 'On track';
+                $barColor = 'bg-primary';
+            }
+        @endphp
+
+        @if ($percent >= 100)
+            <div class="alert alert-danger py-2">
+                {{ $budget->category->name }} budget exceeded by
+                PKR {{ number_format($budget->spent - (float) $budget->budget_limit, 2) }}.
+            </div>
+        @elseif ($percent >= 75)
+            <div class="alert alert-warning py-2">
+                {{ $budget->category->name }} budget is near its limit.
+            </div>
+        @endif
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between gap-2">
+                <strong>{{ $budget->category->name }}</strong>
+                <span>{{ $status }} · {{ number_format($percent, 0) }}%</span>
+            </div>
+
+            <div class="small muted mb-2">
+                PKR {{ number_format($budget->spent, 2) }}
+                of PKR {{ number_format($budget->budget_limit, 2) }}
+            </div>
+
+            <div class="progress" role="progressbar"
+                 aria-valuenow="{{ $width }}" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar {{ $barColor }}"
+                     style="width: {{ $width }}%"></div>
+            </div>
+        </div>
+    @empty
+        <p class="muted mb-0">
+            Is month ke budgets abhi set nahi. Pehle budget add karein.
+            <a href="{{ route('budgets.index') }}">Manage budgets</a>
+        </p>
+    @endforelse
+</section>
 @endsection

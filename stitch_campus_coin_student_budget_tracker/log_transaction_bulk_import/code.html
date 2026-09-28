@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0b1326;color:#dae2fd;-webkit-font-smoothing:antialiased;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "background": "#0b1326", "on-surface": "#dae2fd", "on-error-container": "#ffdad6", "secondary-container": "#3131c0", "error": "#ffb4ab", "surface-container-high": "#222a3d", "surface-container-highest": "#2d3449", "on-surface-variant": "#bbcabf", "surface-dim": "#0b1326", "inverse-surface": "#dae2fd", "error-container": "#93000a", "surface-variant": "#2d3449", "secondary-fixed-dim": "#c0c1ff", "tertiary-fixed": "#ffddb8", "on-secondary-fixed": "#07006c", "surface": "#0b1326", "primary-fixed": "#6ffbbe", "surface-container": "#171f33", "tertiary": "#ffb95f", "tertiary-container": "#e29100", "inverse-primary": "#006c49", "on-primary-fixed": "#002113", "on-background": "#dae2fd", "primary-fixed-dim": "#4edea3", "surface-tint": "#4edea3", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#31394d", "inverse-on-surface": "#283044", "outline-variant": "#3c4a42", "on-tertiary-fixed-variant": "#653e00", "on-primary-fixed-variant": "#005236", "surface-container-lowest": "#060e20", "secondary": "#c0c1ff", "outline": "#86948a", "primary": "#4edea3", "secondary-fixed": "#e1e0ff", "on-secondary-container": "#b0b2ff", "on-primary-container": "#00422b", "primary-container": "#10b981", "on-error": "#690005", "on-primary": "#003824", "surface-container-low": "#131b2e", "on-tertiary-container": "#523200", "on-secondary": "#1000a9", "on-tertiary-fixed": "#2a1700", "on-secondary-fixed-variant": "#2f2ebe", "on-tertiary": "#472a00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "gutter": "1rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter-tablet": "1.5rem", "margin": "1rem", "gutter-desktop": "2rem" }, fontFamily: { "label-md": ["Inter"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "currency-display": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "currency-display": ["36px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "800" }], "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "800" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go Back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Campus Coin Brand Mark" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UE9RAOba-YOuGIx_J10ok7DBR0P2xbusqQbBwF4qeU3kz1hkDjFuh4rmNs5EQCTEA2U1riJjroYIFUwMiGPEUJzGXDVuH-7__-DFWlL4P1iny-UhkBtMq-VzAufl8IbkQHBfAOd5tOv61KgXPMcdVbhZFmhSq6PCuqiMas6XkCKvORoWdsHo9ph2mLurtneage-4LKJadQLXyC1o34I1jhMTEwvsSL3twugzmcWfNbLvIKWo3Z2NgzTfE"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate leading-none ml-1">Add Expense</h1></div><div class="flex items-center gap-space-xs shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAgyp_7oLShhGqYPkU083HJqgZkv6Cp8JQI8Ct7SIvO2wwkQ9tXg-X1wmpcm3_nTWJX7kqq4YxSfTmXKnCa6PvP31usa8nLWNaSysskDdJ7MnJXqzah0PUJKvRWWPGiVAEZL6HYUk4qmuMHNHXZZBzUtNp2CcoKAAQFufCyUyiCES5Xl8Ml0ilNNTK0rR3s4rtSDUyDMXh7e_daiPv7vuaYK-le5hvDPDSJXiPgQ2EBe2O7pyx-4Er"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter pb-space-xl space-y-space-lg">
+<!-- Segmented Control: Expense vs Income -->
+<div class="w-full bg-surface-container-lowest p-space-xs rounded-full flex relative shadow-inner">
+<button class="flex-1 py-space-sm rounded-full flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-all duration-300 bg-surface-container-highest text-on-surface shadow-md" id="type-expense-btn" onclick="switchType('expense')" type="button">
+<span class="material-symbols-outlined text-[18px] text-error" style="font-variation-settings: 'FILL' 1;">arrow_outward</span>
+      Expense
+    </button>
+<button class="flex-1 py-space-sm rounded-full flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-all duration-300 text-on-surface-variant hover:text-on-surface" id="type-income-btn" onclick="switchType('income')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">south_west</span>
+      Income
+    </button>
+</div>
+<!-- Big Interactive Amount Display -->
+<div class="w-full bg-surface-container rounded-xl p-space-lg flex flex-col items-center justify-center relative overflow-hidden shadow-xl">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-xs">Logged Amount</span>
+<div class="flex items-baseline justify-center w-full my-space-xs">
+<span class="font-currency-display text-currency-display text-primary mr-1 select-none">$</span>
+<input class="w-56 text-center font-currency-display text-currency-display text-on-surface bg-transparent focus:outline-none tracking-tight selection:bg-primary-container" id="amount-input" inputmode="decimal" oninput="sanitizeAmount(this)" type="text" value="24.50"/>
+</div>
+<!-- Quick Denomination Add-on Chips -->
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest active:scale-95 transition-transform font-label-md text-label-md flex items-center gap-1 shadow-sm" onclick="addAmount(5)" type="button">
+<span class="text-primary font-bold">+</span>$5
+      </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest active:scale-95 transition-transform font-label-md text-label-md flex items-center gap-1 shadow-sm" onclick="addAmount(10)" type="button">
+<span class="text-primary font-bold">+</span>$10
+      </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest active:scale-95 transition-transform font-label-md text-label-md flex items-center gap-1 shadow-sm" onclick="addAmount(20)" type="button">
+<span class="text-primary font-bold">+</span>$20
+      </button>
+<button aria-label="Clear Amount" class="p-space-xs rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform flex items-center justify-center" onclick="resetAmount()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Category Selection Section -->
+<div class="w-full flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Select Category</span>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container font-semibold" id="category-badge">Campus Dining</span>
+</div>
+<!-- Expense Category Grid -->
+<div class="grid grid-cols-3 gap-space-sm" id="expense-categories">
+<button class="category-card p-space-md rounded-xl bg-surface-container-high flex flex-col items-center justify-center text-center gap-space-xs transition-all ring-0 selected-category bg-secondary-container text-on-surface shadow-md" onclick="selectCategory(this, 'Food &amp; Dining', 'restaurant')" type="button">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<span class="font-label-md text-label-md leading-tight line-clamp-1">Food &amp; Dining</span>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Campus Transport', 'directions_bus')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">directions_bus</span>
+</div>
+<span class="font-label-md text-label-md leading-tight line-clamp-1">Campus Transit</span>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Hostel &amp; Rent', 'domain')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<span class="font-label-md text-label-md leading-tight line-clamp-1">Hostel / Rent</span>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Academics &amp; Books', 'menu_book')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<span class="font-label-md text-label-md leading-tight line-clamp-1">Books &amp; Study</span>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Subscriptions', 'subscriptions')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">subscriptions</span>
+</div>
+<span class="font-label-md text-label-md leading-tight line-clamp-1">Subscriptions</span>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Night Out &amp; Fun', 'local_bar')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">local_bar</span>
+</div>
+<span class="font-label-md text-label-md leading-tight line-clamp-1">Nights Out</span>
+</button>
+</div>
+<!-- Income Category Grid (Hidden by Default) -->
+<div class="grid grid-cols-2 gap-space-sm hidden" id="income-categories">
+<button class="category-card p-space-md rounded-xl bg-surface-container flex items-center gap-space-sm text-left text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Monthly Allowance', 'family_restroom')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">family_restroom</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Allowance</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Family support</p>
+</div>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex items-center gap-space-sm text-left text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Part-Time Job', 'work')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">work</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Part-time Job</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Campus / retail</p>
+</div>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex items-center gap-space-sm text-left text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Scholarship / Grant', 'school')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Scholarship</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Grant / stipend</p>
+</div>
+</button>
+<button class="category-card p-space-md rounded-xl bg-surface-container flex items-center gap-space-sm text-left text-on-surface-variant hover:text-on-surface transition-all" onclick="selectCategory(this, 'Birthday &amp; Gift', 'featured_seasonal_and_gifts')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Gift</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Friends &amp; rewards</p>
+</div>
+</button>
+</div>
+</div>
+<!-- Form Details -->
+<div class="w-full bg-surface-container rounded-xl p-space-md space-y-space-md shadow-md">
+<!-- Payment Method Selector -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Payment Method</label>
+<div class="grid grid-cols-4 gap-space-xs">
+<button class="payment-method-pill py-space-sm px-space-xs rounded-lg bg-surface-container-highest text-on-surface text-center font-label-md text-label-md transition-colors shadow-sm" onclick="selectPayment(this)" type="button">
+          Campus Card
+        </button>
+<button class="payment-method-pill py-space-sm px-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-md text-label-md transition-colors" onclick="selectPayment(this)" type="button">
+          Debit
+        </button>
+<button class="payment-method-pill py-space-sm px-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-md text-label-md transition-colors" onclick="selectPayment(this)" type="button">
+          Venmo
+        </button>
+<button class="payment-method-pill py-space-sm px-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-md text-label-md transition-colors" onclick="selectPayment(this)" type="button">
+          Cash
+        </button>
+</div>
+</div>
+<!-- Date & Time Picker Row -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="trans-date">Date</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">calendar_today</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface focus:outline-none" id="trans-date" type="date" value="2025-05-14"/>
+</div>
+</div>
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="trans-time">Time</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">schedule</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface focus:outline-none" id="trans-time" type="time" value="22:45"/>
+</div>
+</div>
+</div>
+<!-- Note & Context Input -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="trans-notes">Note</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-space-xs">edit_note</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none" id="trans-notes" placeholder="e.g. Late night library snacks" type="text" value="Late night library snacks"/>
+</div>
+</div>
+<!-- Recurring Monthly Entry Toggle -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Recurring Monthly Entry</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Auto-log for hostel rent, Spotify, etc.</p>
+</div>
+</div>
+<button aria-checked="false" class="w-12 h-6 bg-surface-container-highest rounded-full relative p-0.5 transition-colors duration-200 focus:outline-none" id="recurring-toggle" onclick="toggleRecurring(this)" role="switch" type="button">
+<span class="block w-5 h-5 bg-on-surface rounded-full transition-transform duration-200 translate-x-0 shadow-sm" id="recurring-knob"></span>
+</button>
+</div>
+</div>
+<!-- Primary Submit Button -->
+<button class="w-full py-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-lg hover:brightness-105 active:scale-[0.98] transition-all" onclick="saveTransaction()" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+    Save Transaction
+  </button>
+<!-- Secondary Actions: CSV Bulk Import -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col items-center text-center space-y-space-sm">
+<div class="flex items-center justify-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-tertiary">upload_file</span>
+<span class="font-headline-sm text-headline-sm">Bulk Import Transactions</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+      Export your campus bank or debit card statements to CSV and auto-categorize in seconds.
+    </p>
+<!-- Upload Drop Target -->
+<div class="w-full bg-surface-container/70 rounded-lg p-space-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container transition-colors group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors mb-space-xs">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Drag and drop file here, or <span class="text-primary underline">browse</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Supports .CSV, .OFX (Max 5MB)</span>
+<input accept=".csv, .ofx" class="hidden" id="bulk-csv-input" type="file"/>
+</div>
+<!-- Template Download Link -->
+<div class="w-full flex items-center justify-center pt-space-xs">
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:underline" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+        Download Student Template (.csv)
+      </button>
+</div>
+</div>
+<!-- Interactive Feedback Toast (Hidden initially) -->
+<div class="fixed bottom-6 left-4 right-4 bg-primary text-on-primary py-space-sm px-space-md rounded-xl shadow-2xl flex items-center justify-between transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none z-50" id="save-toast">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+<span class="font-label-md text-label-md">Transaction logged to Campus Coin!</span>
+</div>
+<span class="font-currency-display text-label-md font-bold" id="toast-amount">$24.50</span>
+</div>
+</div>
+<script>
+  let currentType = 'expense';
+
+  function switchType(type) {
+    currentType = type;
+    const expenseBtn = document.getElementById('type-expense-btn');
+    const incomeBtn = document.getElementById('type-income-btn');
+    const expenseGrid = document.getElementById('expense-categories');
+    const incomeGrid = document.getElementById('income-categories');
+    const categoryBadge = document.getElementById('category-badge');
+
+    if (type === 'expense') {
+      expenseBtn.className = "flex-1 py-space-sm rounded-full flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-all duration-300 bg-surface-container-highest text-on-surface shadow-md";
+      incomeBtn.className = "flex-1 py-space-sm rounded-full flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-all duration-300 text-on-surface-variant hover:text-on-surface";
+      expenseGrid.classList.remove('hidden');
+      incomeGrid.classList.add('hidden');
+      categoryBadge.textContent = 'Campus Dining';
+    } else {
+      incomeBtn.className = "flex-1 py-space-sm rounded-full flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-all duration-300 bg-surface-container-highest text-on-surface shadow-md";
+      expenseBtn.className = "flex-1 py-space-sm rounded-full flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-all duration-300 text-on-surface-variant hover:text-on-surface";
+      expenseGrid.classList.add('hidden');
+      incomeGrid.classList.remove('hidden');
+      categoryBadge.textContent = 'Monthly Allowance';
+    }
+  }
+
+  function addAmount(delta) {
+    const input = document.getElementById('amount-input');
+    let val = parseFloat(input.value) || 0;
+    val += delta;
+    input.value = val.toFixed(2);
+  }
+
+  function resetAmount() {
+    document.getElementById('amount-input').value = '0.00';
+  }
+
+  function sanitizeAmount(el) {
+    let clean = el.value.replace(/[^0-9.]/g, '');
+    const parts = clean.split('.');
+    if (parts.length > 2) {
+      clean = parts[0] + '.' + parts.slice(1).join('');
+    }
+    el.value = clean;
+  }
+
+  function selectCategory(button, name, icon) {
+    const container = button.parentElement;
+    const cards = container.querySelectorAll('.category-card');
+    cards.forEach(c => {
+      c.className = "category-card p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-all";
+    });
+
+    button.className = "category-card p-space-md rounded-xl bg-secondary-container text-on-surface flex flex-col items-center justify-center text-center gap-space-xs transition-all shadow-md";
+    document.getElementById('category-badge').textContent = name;
+  }
+
+  function selectPayment(button) {
+    const parent = button.parentElement;
+    parent.querySelectorAll('.payment-method-pill').forEach(btn => {
+      btn.className = "payment-method-pill py-space-sm px-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-md text-label-md transition-colors";
+    });
+    button.className = "payment-method-pill py-space-sm px-space-xs rounded-lg bg-surface-container-highest text-on-surface text-center font-label-md text-label-md transition-colors shadow-sm";
+  }
+
+  function toggleRecurring(button) {
+    const isChecked = button.getAttribute('aria-checked') === 'true';
+    const knob = document.getElementById('recurring-knob');
+    if (!isChecked) {
+      button.setAttribute('aria-checked', 'true');
+      button.classList.remove('bg-surface-container-highest');
+      button.classList.add('bg-primary');
+      knob.classList.remove('translate-x-0', 'bg-on-surface');
+      knob.classList.add('translate-x-6', 'bg-on-primary');
+    } else {
+      button.setAttribute('aria-checked', 'false');
+      button.classList.add('bg-surface-container-highest');
+      button.classList.remove('bg-primary');
+      knob.classList.add('translate-x-0', 'bg-on-surface');
+      knob.classList.remove('translate-x-6', 'bg-on-primary');
+    }
+  }
+
+  function saveTransaction() {
+    const amount = document.getElementById('amount-input').value;
+    const toast = document.getElementById('save-toast');
+    const toastAmount = document.getElementById('toast-amount');
+    
+    toastAmount.textContent = '$' + (amount || '0.00');
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+</script></main></body></html>
