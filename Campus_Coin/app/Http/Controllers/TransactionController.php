@@ -7,6 +7,8 @@ use App\Models\Category;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
+use App\Models\Budget;
+
 
 class TransactionController extends Controller
 {
@@ -49,6 +51,24 @@ class TransactionController extends Controller
         ->take(5)
         ->get();
 
+    $budgets = $user->budgets()
+    ->with('category')
+    ->whereDate('month', $startOfMonth)
+    ->get();
+
+    foreach ($budgets as $budget) {
+    $budget->spent = (float) $user->transactions()
+        ->where('category_id', $budget->category_id)
+        ->where('type', 'expense')
+        ->whereBetween('transaction_date', [$startOfMonth, $endOfMonth])
+        ->sum('amount');
+
+    $limit = (float) $budget->budget_limit;
+    $budget->percent = $limit > 0
+        ? ($budget->spent / $limit) * 100
+        : 0;
+    }
+
     $balance = $income - $expenses;
 
     return view('dashboard', compact(
@@ -57,6 +77,7 @@ class TransactionController extends Controller
         'balance',
         'topCategory',
         'topCategoryAmount',
+        'budgets',
         'recent'
     ));
 }

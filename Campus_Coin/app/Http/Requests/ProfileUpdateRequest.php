@@ -26,6 +26,12 @@ class ProfileUpdateRequest extends FormRequest
                 'max:255',
                 Rule::unique(User::class)->ignore($this->user()->id),
             ],
+            'academic_year' => [
+                'required',
+                'in:Year 1 (Freshman),Year 2 (Sophomore),Year 3 (Junior),Year 4 (Senior),Postgraduate',
+            ],
+            'allowance_baseline' => ['required', 'numeric', 'min:0', 'max:99999999.99'],
+            'savings_goal' => ['required', 'numeric', 'min:0', 'max:99999999.99'],
         ];
     }
 }

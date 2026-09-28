@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error-container":"#93000a","outline-variant":"#3c4a42","on-tertiary":"#472a00","on-error-container":"#ffdad6","on-surface":"#dae2fd","on-error":"#690005","secondary-container":"#3131c0","on-tertiary-fixed":"#2a1700","outline":"#86948a","surface":"#0b1326","inverse-on-surface":"#283044","inverse-surface":"#dae2fd","error":"#ffb4ab","tertiary-fixed":"#ffddb8","on-surface-variant":"#bbcabf","surface-dim":"#0b1326","on-tertiary-container":"#523200","secondary":"#c0c1ff","primary-container":"#10b981","on-primary":"#003824","on-secondary-fixed-variant":"#2f2ebe","on-primary-fixed":"#002113","primary-fixed":"#6ffbbe","surface-container-low":"#131b2e","secondary-fixed-dim":"#c0c1ff","on-secondary":"#1000a9","surface-container-high":"#222a3d","primary":"#4edea3","on-primary-fixed-variant":"#005236","tertiary-container":"#e29100","background":"#0b1326","tertiary-fixed-dim":"#ffb95f","surface-variant":"#2d3449","surface-container-highest":"#2d3449","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#4edea3","on-secondary-container":"#b0b2ff","surface-tint":"#4edea3","surface-container":"#171f33","inverse-primary":"#006c49","surface-container-lowest":"#060e20","on-background":"#dae2fd","on-primary-container":"#00422b","on-secondary-fixed":"#07006c","surface-bright":"#31394d","secondary-fixed":"#e1e0ff","tertiary":"#ffb95f"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2rem","space-lg":"1.5rem","margin-tablet":"2rem","margin-desktop":"3rem",gutter:"1rem",margin:"1rem","space-sm":"0.5rem","space-md":"1rem","gutter-tablet":"1.5rem","space-xs":"0.25rem","gutter-desktop":"2rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"currency-display":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Plus Jakarta Sans"]},fontSize:{"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"currency-display":["36px",{lineHeight:"44px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest flex flex-col justify-between z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low/50 backdrop-blur-xl"><img alt="Brand logo. - Primary color: #10b981
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WakW6KXniHHUO_7LVGjKJn2yeoZy8rJ8ROwg-vdzlJlLo5b4UB-UPgVM1n2oSdovPsi4C7iV45hn9JzkZr83AjhObzh12FxhdrmveVugxehvbvXNFfAZPcoJFMpEl-_HyzWnRIr1RvICbSZtXioTtSBnyDBjJnrjur0lAE4262C_NnLZaZYqYXjukDcot3xNObYJRZVRC-E46TgAj2avxT17dye80E2zQSJv0dVFlneinLmYqxx469vLQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Campus Coin</span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Student Finance</span></div></div><nav class="px-space-sm pt-space-md flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="transactions-smart-log" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Transactions &amp; Smart Log</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="budgets-categories" href="#"><span class="material-symbols-outlined text-[20px]">pie_chart</span><span>Budgets &amp; Categories</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="analytics-reports" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Analytics &amp; Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="ai-financial-insights" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AI Financial Insights</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Safe Spend Balance</span><span class="h-2 w-2 rounded-full bg-primary-container animate-pulse"></span></div><div class="flex items-baseline justify-between"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">$412.50</span><span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-2 py-0.5 rounded-full">+12% wk</span></div><div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden"><div class="bg-primary-container h-full rounded-full" style="width: 68%"></div></div></div><div class="flex items-center gap-space-sm p-space-xs bg-surface-container rounded-xl"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1V_ItGoYpfaNjzbdTFL84JBE11aUUnTrwPfQo5tk8WJDEdZvX2M5f2ZzlrJ3-Hvnn_rv1QJaneDxrkPfCNAmvKXjMHYsbtHw7iIO9hSlYkkYB4ohI75x3cyOZ38XkoY0GZhypWMhFZvRigyB0xt7MEkNp7FHLT_BXPhULOpbmNYNwQFbc_yk4igQvCoW-l02wUALT12t5VGPBJvAQkuM1MpEfg_rQdFILZ-4jR0fbBlIy2uZNO6xRa7Nw"/><div class="flex flex-col flex-1 min-w-0"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Ayesha M.</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sophomore • CS</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-1">unfold_more</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center flex-1 max-w-xl"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-xl pl-10 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Search transactions, categories, budgets... /" type="text"/><kbd class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">/</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-high px-3 py-1.5 rounded-full"><span class="material-symbols-outlined text-tertiary text-[18px]">school</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Midterms Week 7</span></div><div class="flex items-center gap-space-xs"><button aria-label="Toggle Dark/Light Mode" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="relative"><button aria-label="Notifications" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button></div></div><button class="flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg font-semibold px-4 py-2 rounded-xl transition-all shadow-sm"><span class="material-symbols-outlined text-[18px]">add</span><span>Log Transaction</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover lg:hidden" src="https://lh3.googleusercontent.com/aida/AEtjO1V_ItGoYpfaNjzbdTFL84JBE11aUUnTrwPfQo5tk8WJDEdZvX2M5f2ZzlrJ3-Hvnn_rv1QJaneDxrkPfCNAmvKXjMHYsbtHw7iIO9hSlYkkYB4ohI75x3cyOZ38XkoY0GZhypWMhFZvRigyB0xt7MEkNp7FHLT_BXPhULOpbmNYNwQFbc_yk4igQvCoW-l02wUALT12t5VGPBJvAQkuM1MpEfg_rQdFILZ-4jR0fbBlIy2uZNO6xRa7Nw"/></div></header><main class="relative pt-16 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Visual Ambient Backlight Layer -->
+<div class="relative w-full">
+<div class="absolute -top-12 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-20 right-10 w-80 h-80 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+</div>
+<!-- Section 1: Top Overview Metric Row -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Card 1: Total Student Allowance -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Allowance Tracker</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2.5 py-1 rounded-full font-medium">12 days left in cycle</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-currency-display text-currency-display text-on-surface font-extrabold tracking-tight">$1,100.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span>Spent: <strong class="text-on-surface font-semibold">$825.00</strong></span>
+<span>Left: <strong class="text-primary font-semibold">$275.00</strong></span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex justify-between items-center mb-1.5 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Budget Burn Rate</span>
+<span class="text-primary font-bold">75.0% Consumed</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-primary-container to-primary rounded-full transition-all duration-500 shadow-sm" style="width: 75.0%"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Overall Budget Health -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Semester Health</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-2.5 py-1 rounded-full font-bold">Grade A-</span>
+</div>
+<div class="flex items-center justify-between my-space-xs">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface">On Track</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Good Standing on 5 of 6 caps</p>
+</div>
+<div class="relative flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="84, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-md text-label-md font-bold text-on-surface">84%</span>
+</div>
+</div>
+<div class="mt-space-sm bg-surface-container-high rounded-lg p-2.5 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">warning</span>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block truncate">1 category nearing cap</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] block truncate">Food &amp; Dining is at 75% capacity</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold underline cursor-pointer hover:text-tertiary-fixed">Inspect</span>
+</div>
+</div>
+<!-- Card 3: Monthly Savings Surplus -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">savings</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Reserve Projection</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container/40 text-secondary px-2.5 py-1 rounded-full font-semibold">Active Goal</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-currency-display text-currency-display text-primary font-extrabold tracking-tight">+$185.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">projected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Automatic rollover enabled at end of cycle</p>
+</div>
+<div class="mt-space-sm bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">laptop_mac</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Semester Laptop Fund</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">$780.00 / $1,200.00</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary-container font-bold px-2 py-1 rounded-lg">65% Target</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Page Action Bar -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg bg-surface-container-low p-space-lg rounded-xl shadow-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Category Limits &amp; Allocations</h2>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-semibold px-2 py-0.5 rounded-full">6 Buckets</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Customize monthly caps, notification thresholds, and add personalized student expense buckets.</p>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-3.5 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" id="resetDefaultsBtn">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Semester Defaults</span>
+</button>
+<button class="flex items-center gap-space-xs px-4 py-2.5 rounded-xl bg-secondary-container/40 hover:bg-secondary-container/60 text-secondary font-label-lg text-label-lg font-semibold transition-all shadow-sm" id="aiBalanceBtn">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Auto-Balance (AI)</span>
+</button>
+<button class="flex items-center gap-space-xs px-5 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg font-bold shadow-lg shadow-primary-container/20 transition-all hover:scale-[1.02] active:scale-95" id="openCategoryModalBtn">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add Custom Category</span>
+</button>
+</div>
+</section>
+<!-- Notification Banner for AI Optimization (State indicator) -->
+<div class="hidden mb-space-lg p-space-md bg-secondary-container/20 rounded-xl flex items-center justify-between animate-fadeIn" id="aiOptimizationBanner">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">smart_toy</span>
+<span class="font-body-md text-body-md text-on-surface">AI recommendation: Reallocate <strong>$35.00</strong> from Leisure to Food &amp; Dining to prevent mid-month overdraft.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="font-label-sm text-label-sm text-secondary font-bold underline px-2 py-1">Apply Rec</button>
+<button class="text-on-surface-variant hover:text-on-surface" id="dismissBannerBtn"><span class="material-symbols-outlined text-[18px]">close</span></button>
+</div>
+</div>
+<!-- Section 3: Categories Desktop Management Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Food & Dining (Approaching Limit) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container-high/80 transition-all duration-200">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">restaurant</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Food &amp; Dining</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cafeteria, groceries &amp; coffee</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-container/30 text-tertiary font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Approaching Limit
+          </span>
+</div>
+<div class="mt-space-lg mb-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-currency-display text-[28px] font-extrabold text-on-surface">$225.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / $300.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-tertiary">$75.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">remaining</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1 text-on-surface-variant">
+<span>Monthly Pace</span>
+<span class="font-bold text-tertiary">75% consumed</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all" style="width: 75%"></div>
+</div>
+</div>
+</div>
+<!-- Metric micro-details -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Suggested Daily Max:</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">$6.00 / day</span>
+</div>
+<!-- Alert Threshold Toggle -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">notifications_active</span>
+<span class="font-label-md text-label-md text-on-surface">Alert at 80% Threshold</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-3 rounded-b-xl">
+<button class="font-label-md text-label-md font-semibold text-primary hover:text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Edit Cap
+        </button>
+<button class="font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">history</span> History
+        </button>
+<button class="font-label-md text-label-md font-semibold text-error hover:text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Hostel & Dorm Rent (Settled) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container-high/80 transition-all duration-200">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">apartment</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Hostel &amp; Dorm Rent</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monthly campus housing fees</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-container/20 text-primary font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Settled
+          </span>
+</div>
+<div class="mt-space-lg mb-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-currency-display text-[28px] font-extrabold text-on-surface">$450.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / $450.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant">$0.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">remaining</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1 text-on-surface-variant">
+<span>Payment Complete</span>
+<span class="font-bold text-primary">100% Settled</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Transaction ID:</span>
+</div>
+<span class="font-label-md text-label-md font-mono text-on-surface">#DORM-8839-OCT</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">notifications_paused</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Lock further transactions</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-secondary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-secondary-container after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-3 rounded-b-xl">
+<button class="font-label-md text-label-md font-semibold text-primary hover:text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">receipt</span> Receipt
+        </button>
+<button class="font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Adjust Fixed
+        </button>
+<button class="font-label-md text-label-md font-semibold text-outline hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Campus Transit & Shuttles (Healthy) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container-high/80 transition-all duration-200">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">directions_bus</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Campus Transit</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Metro card, city shuttles</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Healthy
+          </span>
+</div>
+<div class="mt-space-lg mb-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-currency-display text-[28px] font-extrabold text-on-surface">$40.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / $100.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-primary">$60.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">remaining</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1 text-on-surface-variant">
+<span>Comfortable Margin</span>
+<span class="font-bold text-primary">40% consumed</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all" style="width: 40%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">commute</span>
+<span>Avg Ride Cost:</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">$2.50 / trip</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">notifications_active</span>
+<span class="font-label-md text-label-md text-on-surface">Alert at 75% Threshold</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-3 rounded-b-xl">
+<button class="font-label-md text-label-md font-semibold text-primary hover:text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Edit Cap
+        </button>
+<button class="font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">history</span> History
+        </button>
+<button class="font-label-md text-label-md font-semibold text-error hover:text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Academics, Books & Print Credits (On Track) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container-high/80 transition-all duration-200">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Academics &amp; Print</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Textbooks, lab kits &amp; printing</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            On Track
+          </span>
+</div>
+<div class="mt-space-lg mb-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-currency-display text-[28px] font-extrabold text-on-surface">$65.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / $120.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">$55.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">remaining</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1 text-on-surface-variant">
+<span>Standard Burn</span>
+<span class="font-bold text-on-surface">54% consumed</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all" style="width: 54%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print Quota Remaining:</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">142 Pages</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">notifications_active</span>
+<span class="font-label-md text-label-md text-on-surface">Alert at 85% Threshold</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-3 rounded-b-xl">
+<button class="font-label-md text-label-md font-semibold text-primary hover:text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Edit Cap
+        </button>
+<button class="font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">history</span> History
+        </button>
+<button class="font-label-md text-label-md font-semibold text-error hover:text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Entertainment & Weekend Leisure (Healthy) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container-high/80 transition-all duration-200">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">sports_esports</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Weekend Leisure</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cinema, events &amp; gaming</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Healthy
+          </span>
+</div>
+<div class="mt-space-lg mb-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-currency-display text-[28px] font-extrabold text-on-surface">$25.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / $80.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-primary">$55.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">remaining</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1 text-on-surface-variant">
+<span>Under Budget</span>
+<span class="font-bold text-primary">31% consumed</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all" style="width: 31%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span>Surplus potential:</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">+$35.00 Rollover</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">notifications_off</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Alert threshold</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-3 rounded-b-xl">
+<button class="font-label-md text-label-md font-semibold text-primary hover:text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Edit Cap
+        </button>
+<button class="font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">history</span> History
+        </button>
+<button class="font-label-md text-label-md font-semibold text-error hover:text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 6: Gym, Protein & Campus Rec (Custom Category) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container-high/80 transition-all duration-200">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">fitness_center</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Gym &amp; Rec</h3>
+<span class="font-label-sm text-label-sm bg-secondary-container/40 text-secondary font-bold px-1.5 py-0.5 rounded">Custom</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Supplements &amp; climbing gym</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Healthy
+          </span>
+</div>
+<div class="mt-space-lg mb-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-currency-display text-[28px] font-extrabold text-on-surface">$20.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> / $50.00</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-primary">$30.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">remaining</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1 text-on-surface-variant">
+<span>Goal Tracking</span>
+<span class="font-bold text-primary">40% consumed</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all" style="width: 40%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+<span>Next supplement order:</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">18 Nov</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">notifications_active</span>
+<span class="font-label-md text-label-md text-on-surface">Alert at 90% Threshold</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-3 rounded-b-xl">
+<button class="font-label-md text-label-md font-semibold text-primary hover:text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Edit Cap
+        </button>
+<button class="font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">history</span> History
+        </button>
+<button class="font-label-md text-label-md font-semibold text-error hover:text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Photo Inset Feature Card (Student Lifestyle / Budget Smart Tips) -->
+<section class="mt-space-xl grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="lg:col-span-2 bg-surface-container rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row">
+<div class="md:w-1/2 p-space-lg flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-widest">Campus Perk Integration</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Split Dining with Flatmates</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+            Link roommate UPI or peer transfers directly to categories to auto-deduct grocery shares instantly.
+          </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-md">
+<button class="px-4 py-2 bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold rounded-xl transition-all">
+            Connect Flatmates
+          </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 connected</span>
+</div>
+</div>
+<div class="md:w-1/2 min-h-[160px] relative">
+<img class="w-full h-full object-cover" data-alt="A candid photo of university students studying and drinking matcha lattes at an energetic student union cafe. Soft ambient mint and indigo lighting tones with modern campus decor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrjihsQ0i23D-V_jSQ0YXab7YDQnsjuTOiKseWjsf-PLSnQJprbH_jzRWkHiE6wSzS71OP014Cmr-DuoP1TKuepNihzDqSLrNd0Tiip7fGML7gCvZVZxXUMhAVZkrnXtT6SFmAIyI698aKap4APsJyLFU-Qc65jNdihY4utPBJlneZpou4CJLQVRIl72iGJVHjTxckLdm4e0J6CV-jBOEadSAEuWgxkAL23VmCl7vttb78Le98z5pv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent md:bg-gradient-to-r md:from-surface-container md:to-transparent"></div>
+</div>
+</div>
+<!-- Quick Tip Bento -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-tertiary text-[24px]">lightbulb</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Study Hack</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Book Buyback Season</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Campus library buybacks open next Friday. You could recover up to $45.00 toward your academic bucket.
+        </p>
+</div>
+<button class="w-full py-2 bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold rounded-lg transition-colors text-center mt-2">
+        Set Calendar Alert
+      </button>
+</div>
+</section>
+<!-- Slide-over / Modal Style Add New Category Drawer -->
+<div class="fixed inset-0 z-50 flex items-center justify-end bg-surface-container-lowest/80 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none" id="addCategoryModal">
+<div class="w-full max-w-lg h-full bg-surface-container p-space-lg flex flex-col justify-between shadow-2xl transform translate-x-full transition-transform duration-300 overflow-y-auto" id="modalDrawer">
+<!-- Header -->
+<div>
+<div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">category</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Create Expense Category</h3>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors" id="closeCategoryModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Elements -->
+<form class="space-y-space-md" id="newCategoryForm">
+<!-- Type Segmented Toggle -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant">Allocation Type</label>
+<div class="grid grid-cols-2 p-1 bg-surface-container-lowest rounded-xl">
+<button class="py-2 font-label-md text-label-md rounded-lg font-bold bg-surface-container text-on-surface shadow-sm" type="button">Expense</button>
+<button class="py-2 font-label-md text-label-md rounded-lg font-medium text-on-surface-variant hover:text-on-surface" type="button">Savings Bucket</button>
+</div>
+</div>
+<!-- Category Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant" for="catName">Category Name</label>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="catName" placeholder="e.g., Coding Subscriptions &amp; Cloud" type="text"/>
+</div>
+<!-- Category Icon Picker -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant">Select Icon</label>
+<div class="grid grid-cols-6 gap-2">
+<button class="p-3 rounded-xl bg-primary-container/20 text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">laptop</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">coffee</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">flight</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">local_mall</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">sports_soccer</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">palette</span>
+</button>
+</div>
+</div>
+<!-- Color Dot Picker -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant">Color Theme Indicator</label>
+<div class="flex items-center gap-3">
+<button class="w-8 h-8 rounded-full bg-primary-container shadow-md ring-2 ring-primary ring-offset-2 ring-offset-surface-container" type="button"></button>
+<button class="w-8 h-8 rounded-full bg-secondary shadow-md hover:scale-105 transition-transform" type="button"></button>
+<button class="w-8 h-8 rounded-full bg-tertiary shadow-md hover:scale-105 transition-transform" type="button"></button>
+<button class="w-8 h-8 rounded-full bg-error shadow-md hover:scale-105 transition-transform" type="button"></button>
+<button class="w-8 h-8 rounded-full bg-primary-fixed shadow-md hover:scale-105 transition-transform" type="button"></button>
+</div>
+</div>
+<!-- Monthly Cap Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant" for="catCap">Monthly Cap Limit ($ USD)</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 font-headline-sm text-headline-sm font-bold text-on-surface-variant">$</span>
+<input class="w-full bg-surface-container-low text-on-surface font-headline-sm text-headline-sm font-bold pl-8 pr-4 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="catCap" placeholder="150.00" type="number"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Will draw from remaining unallocated allowance ($275.00 available).</span>
+</div>
+<!-- Alert Threshold Slider -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant" for="thresholdSlider">Push Notification Alert Trigger</label>
+<span class="font-label-md text-label-md font-bold text-primary" id="sliderValueText">80% of Cap</span>
+</div>
+<input class="w-full h-2 bg-surface-container-lowest rounded-lg appearance-none cursor-pointer accent-primary-container" id="thresholdSlider" max="95" min="50" type="range" value="80"/>
+<div class="flex justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>50% (Early warning)</span>
+<span>80% (Recommended)</span>
+<span>95% (Critical only)</span>
+</div>
+</div>
+</form>
+</div>
+<!-- Drawer Footer Action Buttons -->
+<div class="pt-space-md flex items-center gap-space-sm bg-surface-container">
+<button class="flex-1 py-3 bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold rounded-xl transition-colors" id="cancelModalBtn" type="button">
+          Cancel
+        </button>
+<button class="flex-1 py-3 bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg font-bold rounded-xl shadow-lg shadow-primary-container/20 transition-transform active:scale-95" id="saveCategoryBtn" type="button">
+          Save Allocation
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+  (function initBudgetsInteractions() {
+    const modal = document.getElementById('addCategoryModal');
+    const drawer = document.getElementById('modalDrawer');
+    const openBtn = document.getElementById('openCategoryModalBtn');
+    const closeBtn = document.getElementById('closeCategoryModalBtn');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const saveBtn = document.getElementById('saveCategoryBtn');
+    const thresholdSlider = document.getElementById('thresholdSlider');
+    const sliderValueText = document.getElementById('sliderValueText');
+    const aiBalanceBtn = document.getElementById('aiBalanceBtn');
+    const aiOptimizationBanner = document.getElementById('aiOptimizationBanner');
+    const dismissBannerBtn = document.getElementById('dismissBannerBtn');
+
+    function openModal() {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      drawer.classList.remove('translate-x-full');
+    }
+
+    function closeModal() {
+      drawer.classList.add('translate-x-full');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    // Close on background backdrop tap
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    // Dynamic slider label
+    if (thresholdSlider && sliderValueText) {
+      thresholdSlider.addEventListener('input', (e) => {
+        sliderValueText.textContent = e.target.value + '% of Cap';
+      });
+    }
+
+    // AI Optimize Trigger
+    if (aiBalanceBtn && aiOptimizationBanner) {
+      aiBalanceBtn.addEventListener('click', () => {
+        aiOptimizationBanner.classList.remove('hidden');
+        aiOptimizationBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
+
+    if (dismissBannerBtn && aiOptimizationBanner) {
+      dismissBannerBtn.addEventListener('click', () => {
+        aiOptimizationBanner.classList.add('hidden');
+      });
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        closeModal();
+      });
+    }
+  })();
+</script></main></div></body></html>

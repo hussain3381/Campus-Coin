@@ -29,23 +29,31 @@ class RegisteredUserController extends Controller
      * @throws ValidationException
      */
     public function store(Request $request): RedirectResponse
-    {
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
-        ]);
+{
+    $data = $request->validate([
+        'name' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:users,email'],
+        'academic_year' => [
+            'required',
+            'in:Year 1 (Freshman),Year 2 (Sophomore),Year 3 (Junior),Year 4 (Senior),Postgraduate',
+        ],
+        'allowance_baseline' => ['required', 'numeric', 'min:0', 'max:99999999.99'],
+        'savings_goal' => ['required', 'numeric', 'min:0', 'max:99999999.99'],
+        'password' => ['required', 'confirmed', Rules\Password::defaults()],
+    ]);
 
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+    $user = User::create([
+        'name' => $data['name'],
+        'email' => $data['email'],
+        'academic_year' => $data['academic_year'],
+        'allowance_baseline' => $data['allowance_baseline'],
+        'savings_goal' => $data['savings_goal'],
+        'password' => Hash::make($data['password']),
+    ]);
 
-        event(new Registered($user));
+    event(new Registered($user));
+    Auth::login($user);
 
-        Auth::login($user);
-
-        return redirect(route('dashboard', absolute: false));
-    }
+    return redirect(route('dashboard', absolute: false));
+}
 }

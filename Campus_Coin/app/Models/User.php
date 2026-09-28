@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
@@ -22,6 +23,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'academic_year',
+        'allowance_baseline',
+        'savings_goal',
     ];
 
     /**
@@ -44,6 +48,8 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'allowance_baseline' => 'decimal:2',
+            'savings_goal' => 'decimal:2',
         ];
     }
 public function transactions(): HasMany
@@ -55,5 +61,18 @@ public function categories(): HasMany
 {
     return $this->hasMany(Category::class);
 }
+
+public function budgets(): HasMany
+{
+    return $this->hasMany(Budget::class);
+}  
+
+public function savingTips(): BelongsToMany
+{
+    return $this->belongsToMany(SavingTip::class, 'user_saving_tips')
+        ->withPivot('is_pinned', 'is_dismissed')
+        ->withTimestamps();
+}
+
 
 }
