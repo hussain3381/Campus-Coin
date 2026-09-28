@@ -1,0 +1,23 @@
+FROM php:8.2-fpm-alpine
+
+# Zaroori tools aur extensions install karne ke liye
+RUN apk add --no-cache nginx wget supervisor
+RUN docker-php-ext-install pdo pdo_mysql
+
+# Composer copy karne ke liye
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www/html
+
+# Project files copy karne ke liye
+COPY . .
+
+# Production dependencies install karne ke liye
+RUN composer install --no-dev --optimize-autoloader
+
+# Permissions set karne ke liye (Taki Laravel errors na de)
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+
+EXPOSE 80
+
+CMD ["sh", "-c", "php artisan config:cache && php artisan route:cache && php artisan view:cache && nginx -g 'daemon off;'"]
